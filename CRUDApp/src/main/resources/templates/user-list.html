@@ -19,8 +19,6 @@ telegram: @suspense_np -->
                 <th>First name</th>
                 <th>Last name</th>
                 <th>Email</th>
-                <th>Phone</th>
-                <th>Website</th>
             </tr>
             </thead>
             <tbody>
@@ -29,10 +27,9 @@ telegram: @suspense_np -->
                 <td th:text="${user.first_name}"></td>
                 <td th:text="${user.last_name}"></td>
                 <td th:text="${user.email}"></td>
-                <td th:text="${user.phone}"></td>
-                <td th:text="${user.website}"></td>
                 <td><a th:href="@{user-update/{id}(id=${user.id})}">Edit</a></td>
                 <td><a th:href="@{user-delete/{id}(id=${user.id})}">Delete</a></td>
+                <td><a th:href="@{user-info/{id}(id=${user.id})}">Info</a></td>
             </tr>
             </tbody>
         </table>

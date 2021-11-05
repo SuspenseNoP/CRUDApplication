@@ -28,6 +28,12 @@ public class UserController {
         model.addAttribute("users",users);
         return "user-list";
     }
+    @GetMapping("/user-info/{id}")
+    public String infoUserForm(Model model, @PathVariable ("id") Long id) {
+        User user = userService.findById(id);
+        model.addAttribute("user", user);
+        return "user-info";
+    }
 
     @GetMapping("/user-create")
     public String createUserForm(User user)
@@ -63,8 +69,5 @@ public class UserController {
         userService.saveUser(user);
         return "redirect:/users";
     }
-
-
-
 
 }
