@@ -20,11 +20,11 @@
                     <a class="nav-link" href="/user">User list</a>
                 </li>
             </#if>
-            <#if user??>
+  <!--          <#if user??>
             <li class="nav-item">
                 <a class="nav-link" href="/user-messages/${currentUserId}">My Messages</a>
             </li>
-            </#if>
+            </#if> -->
         </ul>
 
         <div class="navbar-text mr-3">${name}</div>
