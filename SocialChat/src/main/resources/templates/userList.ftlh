@@ -21,6 +21,7 @@ List of users
             <td>${user.email?ifExists}</td>
             <td><a href="/user/edit/${user.id}">Edit</a> </td>
             <td><a href="/user/delete/${user.id}">Delete</a> </td>
+            <td><a href="/user/info/${user.id}">Info</a> </td>
         </tr>
 
     </#list>
